@@ -1,0 +1,70 @@
+/*
+	Breakpoints
+ */
+@media (min-width: 767px) {
+  .multi-steps {
+    margin-left: -6% !important; }
+  .success-message {
+    text-align: center; }
+  .screen-msg {
+    text-align: left; }
+  .screen-msg p span {
+    margin-left: 20%; }
+  .screen-msg p .msg {
+    margin-left: 18.5%; }
+  #gift-details .message textarea {
+    width: 500px !important; }
+  #gift-details select {
+    width: 460px !important; }
+  #gift-details input {
+    width: 440px !important; }
+  .billing-info {
+    width: 60vw; }
+  .screen-msg .email span {
+    margin-left: 27%; }
+  .screen-msg .message span {
+    margin-left: 22%; }
+  .screen-msg p .msg {
+    margin-left: 19%; } }
+
+@media (min-width: 1025px) {
+  .multi-steps {
+    margin-left: -4% !important; }
+  .screen-msg p span {
+    margin-left: 20%; }
+  .screen-msg p .msg {
+    margin-left: 19%; }
+  #gift-details .message textarea {
+    width: 700px !important; }
+  #gift-details select {
+    width: 660px !important; }
+  #gift-details input {
+    width: 640px !important; }
+  .billing-info {
+    width: 50vw; }
+  .screen-msg .email span {
+    margin-left: 25%; }
+  .screen-msg .message span {
+    margin-left: 22%; }
+  .screen-msg p .msg {
+    margin-left: 19%; } }
+
+@media (min-width: 1281px) {
+  .multi-steps {
+    margin-left: -3% !important; }
+  #gift-details .message textarea {
+    width: 900px !important; }
+  #gift-details select {
+    width: 860px !important; }
+  #gift-details input {
+    width: 840px !important; }
+  .billing-info {
+    width: 40vw; }
+  .button {
+    width: 50%; }
+  .screen-msg .email span {
+    margin-left: 24%; }
+  .screen-msg .message span {
+    margin-left: 21.5%; }
+  .screen-msg p .msg {
+    margin-left: 19%; } }

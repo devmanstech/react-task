@@ -1,0 +1,76 @@
+@import url("gift-detail.css");
+@import url("billing-info.css");
+@import url("final.css");
+@import url("media.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap");
+
+body {
+  /* background: ulr(); -- Background placeholder */
+  background-color: #3e3e3e;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px; }
+
+/*
+	Step progress Bar 
+ */
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 700; }
+
+.multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+  background-color: #a1a1a1; }
+
+.multi-steps {
+  margin-left: -8%;
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+  .multi-steps > li {
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: #288147; }
+    .multi-steps > li:before {
+      content: '\f00c';
+      content: '\2713;';
+      content: '\10003';
+      content: '\10004';
+      content: '\2713';
+      display: block;
+      margin: 0 auto 4px;
+      color: #fff;
+      background-color: #288147;
+      width: 36px;
+      height: 36px;
+      line-height: 32px;
+      text-align: center;
+      font-weight: bold;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #288147;
+      border-radius: 50%; }
+    .multi-steps > li:after {
+      content: '';
+      height: 2px;
+      width: 100%;
+      background-color: #288147;
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      z-index: -1; }
+    .multi-steps > li:last-child:after {
+      display: none; }
+    .multi-steps > li.is-active:before {
+      background-color: #288147;
+      border-color: #288147; }
+    .multi-steps > li.is-active ~ li {
+      color: #808080; }
+      .multi-steps > li.is-active ~ li:before {
+        background-color: #a1a1a1;
+        border-color: #a1a1a1; }
+		

@@ -1,0 +1,40 @@
+/*
+	Final Step
+ */
+.success-message {
+  color: #fff; }
+  .success-message h1 {
+    text-align: center; }
+  .success-message a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em; }
+
+.screen-msg {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50vw;
+  background-color: #bababa;
+  padding: 20px; }
+  .screen-msg h2 {
+    text-align: center;
+    color: #111111;
+    font-weight: 900; }
+  .screen-msg p {
+    margin: 0;
+    color: #212121;
+    font-size: 1.1em;
+    font-weight: bold; }
+    .screen-msg p span {
+      margin-left: 5%;
+      font-weight: 100; }
+
+.screen-msg p .msg {
+  margin-left: 2%; }
+
+.note {
+  font-family: 'Open Sans', sans-serif; }
+
+.button.gift {
+  font-size: .8em; }

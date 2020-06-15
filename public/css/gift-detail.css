@@ -1,0 +1,80 @@
+/*
+	Gift Details Form
+ */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70vw;
+  margin-bottom: 150px; }
+  
+  .container .title {
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: #fff; }
+  .container .sub-title {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    color: #fff; }
+  .container .gift-form {
+    justify-content: center;
+    width: 70vw;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0;
+    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.7); }
+  .container .gift-form h3 {
+    margin-top: -25px;
+    font-size: 3em; }
+  .container .gift-form h4 {
+    font-size: 1.5em; }
+  .container .to {
+    margin-top: -30px; }
+  .container #gift-details .gift-form div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .container #gift-details .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .container #gift-details .message textarea {
+    width: 310px;
+    height: 150px;
+    max-width: 70vw; }
+  .container #gift-details input {
+    width: 250px;
+    padding: 10px;
+    border: none; }
+  .container .gift-form div label {
+    margin-right: 20px; }
+  .container #gift-details select {
+    margin-left: 5px;
+    width: 270px;
+    padding: 10px; }
+  .container .gift-form div label {
+    margin-bottom: -15px;
+    margin-top: 15px; }
+  .container #gift-details .recipient, .container #gift-details .price, .container #gift-details .email, .container #gift-details .message {
+    width: 100%;
+    padding: 10px; }
+  .container #gift-details .email {
+    padding: 10px 0; }
+  .container .button {
+    position: relative;
+    top: 80px;
+    border: none;
+    width: 70vw;
+    padding: 15px;
+    color: #fff;
+    background-color: #288147;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color .7s ease; }
+    .container .button:hover {
+      background-color: #0e9a3f; }
+

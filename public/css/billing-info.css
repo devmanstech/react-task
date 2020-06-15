@@ -1,0 +1,61 @@
+/*
+	Billing Info Form
+ */
+.billing-info {
+  margin: 0 auto; }
+
+.screen-msg .total, .screen-msg .total span {
+  font-weight: 700; }
+
+.screen-msg .total a {
+  color: #288147;
+  text-decoration: none;
+  margin-left: 10px; }
+
+.billing-info h3 {
+  color: #fff;
+  text-align: center; }
+
+.screen-msg .email span {
+  margin-left: 17%; }
+
+.screen-msg .message span {
+  margin-left: 10%; }
+
+.billing-info div label {
+  color: #c7c7c7; }
+
+.billing-info .section-1 div {
+  margin-top: 15px; }
+
+.billing-info .section-1 div input {
+  margin-top: -10px;
+  width: 100%;
+  padding: 10px; }
+
+.billing-info .section-2 .card-number {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 5%; }
+
+.billing-info .section-2 input {
+  width: 100%;
+  padding: 10px; }
+
+.billing-info .section-2 .card-n {
+  width: 87%; }
+
+.billing-info .section-2 .cvc-n {
+  width: 100%; }
+
+.billing-info .section-2 .expire-date input {
+  width: 100%; }
+
+.footer-msg {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif; }
+  .footer-msg a {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none; }
