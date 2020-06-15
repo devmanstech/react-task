@@ -8,10 +8,10 @@ function Home(props) {
     const [message, setMessage] = React.useState(props.data.message);
     const handleNavigateBillingInfo = (event) => {
         event.preventDefault();
-        if (email=='' || customerName=='' || message=='')
+        if (email=='' || giftTotal==''|| customerName=='' || message=='')
             {
-                // alert("Please Insert All Fields!");
-                // return
+                alert("Please Insert All Fields!");
+                return
             }
         props.onHandleSaveData({email,customerName,giftTotal,message});
         history.push("/billingInfo")
@@ -30,7 +30,7 @@ function Home(props) {
                 <h1 className="title">Gift Details</h1>
                 <p className="sub-title">Simply fill in the form below! no NOSH account required.</p>
                 <div className="gift-form">
-                    <form action="index_submit" method="post" id="gift-details" accept-charset="utf-8">
+                    <form  id="gift-details" >
                         <h4 className="title">NOSH MEAL PLAN</h4>
                         <h3 className="sub-title">GIFT CARD</h3>
                         <div className="recipient">
@@ -48,6 +48,7 @@ function Home(props) {
                                     value={giftTotal}
                                     onChange={event => setGiftTotal(event.target.value)}
                             >
+                                <option value="">-Select Amount-</option>
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                                 <option value="3000">3000</option>

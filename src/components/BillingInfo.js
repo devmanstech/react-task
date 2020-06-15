@@ -44,15 +44,15 @@ function BillingInfo(props) {
                     <p className="message">Message: <span>{props.detailData.message}</span></p>
                 </div>
                 <div className="billing-info">
-                    <form action="index_submit" method="post" id="billing-form" accept-charset="utf-8">
+                    <form  method="post" id="billing-form" >
                         <h3>Your information</h3>
                         <div className="section-1">
                             <div className="name">
                                 <label>Your name</label>
                                 <br/>
                                 <input type="text"
-                                       value={yourName}
-                                       onChange={event => setYourName(event.target.value)}
+                                       defaultValue={yourName}
+                                       // onChange={event => setYourName(event.target.value)}
                                        name="to"
                                        id="to"/>
                             </div>
@@ -61,8 +61,8 @@ function BillingInfo(props) {
                                 <label>You Email Address</label>
                                 <br/>
                                 <input type="email"
-                                       value={yourEmail}
-                                       onChange={event => setYourEmail(event.target.value)}
+                                       defaultValue={yourEmail}
+                                       // onChange={event => setYourEmail(event.target.value)}
                                        name="email" id="email"/>
                             </div>
                             {/*    Email*/}
