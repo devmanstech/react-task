@@ -16,7 +16,7 @@ function BillingInfo(props) {
             return
         }
         props.onHandleSaveData({yourName, yourEmail, cardNumber, cardCVC, cardExpireDate});
-        history.push("/final")
+        history.push("/parent/final")
     }
 
     return (
@@ -24,9 +24,9 @@ function BillingInfo(props) {
             <div className="container-fluid">
                 <br/>
                 <ul className="list-unstyled multi-steps">
-                    <li onClick={() => history.push('/')}/>
+                    <li onClick={() => history.push('/parent')}/>
                     <li className="is-active"/>
-                    <li onClick={() => history.push('/final')}/>
+                    <li onClick={() => history.push('/parent/final')}/>
                 </ul>
             </div>
             <div className="container">
@@ -36,7 +36,7 @@ function BillingInfo(props) {
                         <span>HK${props.detailData.giftTotal}
                             <a href={""} onClick={event => {
                                 event.preventDefault();
-                                history.push("/")
+                                history.push("/parent")
                             }}>Edit</a>
                         </span>
                     </p>

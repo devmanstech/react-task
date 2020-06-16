@@ -14,7 +14,7 @@ function Home(props) {
                 return
             }
         props.onHandleSaveData({email,customerName,giftTotal,message});
-        history.push("/billingInfo")
+        history.push("/parent/billingInfo")
     }
     return (
         <>

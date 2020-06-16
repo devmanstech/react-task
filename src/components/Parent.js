@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./Home";
 import BillingInfo from "./BillingInfo";
 import Final from "./Final";
-
+import '../assets/css/style.css'
 function Parent(props) {
     const giftDetails = {
         email:'',
@@ -54,13 +54,13 @@ function Parent(props) {
     return (
         <Router>
             <Switch>
-                <Route exact path="/">
+                <Route exact path={props.match.path}>
                     <Home data = {giftDetails} onHandleSaveData = {handleSaveGiftDetails} />
                 </Route>
-                <Route exact path="/billingInfo">
+                <Route exact path={`${props.match.path}/billingInfo`} >
                     <BillingInfo detailData = {giftDetails} data = {billingInfo} onHandleSaveData={handleSaveBillingInfo}/>
                 </Route>
-                <Route exact path="/final">
+                <Route exact path={`${props.match.path}/final`}>
                     <Final finalData={giftDetails} onHandleSubmitData = {handleSubmitData}/>
                 </Route>
             </Switch>

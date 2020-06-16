@@ -20,7 +20,7 @@ function Final(props) {
                 <br/>
                 <ul className="list-unstyled multi-steps">
                     <li onClick={() => history.push('/')}/>
-                    <li onClick={() => history.push('/billingInfo')}/>
+                    <li onClick={() => history.push('/parent/billingInfo')}/>
                     <li className="is-active"></li>
                 </ul>
             </div>

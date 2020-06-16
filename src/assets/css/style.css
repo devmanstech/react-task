@@ -1,17 +1,18 @@
-@import url("gift-detail.css");
-@import url("billing-info.css");
-@import url("final.css");
-@import url("media.css");
+@import url("/css/gift-detail.css");
+@import url("/css/billing-info.css");
+@import url("/css/final.css");
+@import url("/css/media.css");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap");
 
 body {
   /* background: ulr(); -- Background placeholder */
   background-color: #3e3e3e;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 /*
-	Step progress Bar 
+	Step progress Bar
  */
 .multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
   content: counter(stepNum);
@@ -73,4 +74,4 @@ body {
       .multi-steps > li.is-active ~ li:before {
         background-color: #a1a1a1;
         border-color: #a1a1a1; }
-		
+
