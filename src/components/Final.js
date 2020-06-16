@@ -9,7 +9,7 @@ function Final(props) {
 
         html2canvas(document.querySelector('#content')).then(canvas => {
             // let pdf = new jsPDF('p', 'mm', 'a4');
-            let pdf = new jsPDF('p', 'mm', [297, 297]);
+            let pdf = new jsPDF('p', 'mm', [297, 300]);
             pdf.addImage(canvas.toDataURL('text'),'JPEG',0,0,canvas.width*0.2,canvas.height*0.2,"a","FAST");
             pdf.save(filename);
         });
